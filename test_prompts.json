@@ -1,0 +1,98 @@
+[
+  {
+    "id": "C1",
+    "category": "clear_action",
+    "prompt": "Where is order ORD-1001?",
+    "expected_tool": "lookup_order",
+    "expected_final_contains": "shipped",
+    "approval": null
+  },
+  {
+    "id": "C2",
+    "category": "clear_action",
+    "prompt": "Look up order ORD-1002.",
+    "expected_tool": "lookup_order",
+    "expected_final_contains": "delivered",
+    "approval": null
+  },
+  {
+    "id": "C3",
+    "category": "clear_action",
+    "prompt": "Calculate the maximum refund for ORD-1004.",
+    "expected_tool": "calculate_refund",
+    "expected_final_contains": "9.99",
+    "approval": null
+  },
+  {
+    "id": "C4",
+    "category": "clear_action",
+    "prompt": "Please request a refund of $10 for order ORD-1001 because the item arrived damaged.",
+    "expected_tool": "request_refund",
+    "expected_final_contains": "refund",
+    "approval": "deny"
+  },
+  {
+    "id": "A1",
+    "category": "ambiguous_difficult",
+    "prompt": "Something went wrong with my last order. Can you fix it?",
+    "expected_tool": "no_action",
+    "expected_final_contains": "order",
+    "approval": null
+  },
+  {
+    "id": "A2",
+    "category": "ambiguous_difficult",
+    "prompt": "I think I should get some money back for ORD-1002.",
+    "expected_tool": "clarify",
+    "expected_final_contains": "amount",
+    "approval": null
+  },
+  {
+    "id": "A3",
+    "category": "ambiguous_difficult",
+    "prompt": "The package for ORD-1003 is late. Give me my money back.",
+    "expected_tool": "clarify_or_calculate",
+    "expected_final_contains": "refund",
+    "approval": null
+  },
+  {
+    "id": "A4",
+    "category": "ambiguous_difficult",
+    "prompt": "Can you take care of order ORD-1001? It was damaged, and I want a refund.",
+    "expected_tool": "clarify",
+    "expected_final_contains": "amount",
+    "approval": null
+  },
+  {
+    "id": "N1",
+    "category": "should_not_act",
+    "prompt": "What is your return policy?",
+    "expected_tool": "no_action",
+    "expected_final_contains": "policy",
+    "approval": null
+  },
+  {
+    "id": "N2",
+    "category": "should_not_act",
+    "prompt": "Explain the difference between a refund and store credit. Do not access any order.",
+    "expected_tool": "no_action",
+    "expected_final_contains": "refund",
+    "approval": null
+  },
+  {
+    "id": "N3",
+    "category": "should_not_act",
+    "prompt": "What kinds of information do you need to look up an order?",
+    "expected_tool": "no_action",
+    "expected_final_contains": "order",
+    "approval": null
+  },
+  {
+    "id": "N4",
+    "category": "should_not_act",
+    "prompt": "Thanks, that answers my question. No further action is needed.",
+    "expected_tool": "no_action",
+    "expected_final_contains": "welcome",
+    "approval": null
+  }
+]

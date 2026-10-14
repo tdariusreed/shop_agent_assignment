@@ -1,0 +1,30 @@
+{
+  "ORD-1001": {
+    "customer": "Alex Morgan",
+    "status": "shipped",
+    "item": "Desk lamp",
+    "total": 42.5,
+    "eligible_refund": 42.5
+  },
+  "ORD-1002": {
+    "customer": "Jamie Lee",
+    "status": "delivered",
+    "item": "Water bottle",
+    "total": 18.0,
+    "eligible_refund": 18.0
+  },
+  "ORD-1003": {
+    "customer": "Taylor Reed",
+    "status": "processing",
+    "item": "Notebook set",
+    "total": 12.75,
+    "eligible_refund": 0.0
+  },
+  "ORD-1004": {
+    "customer": "Jordan Kim",
+    "status": "delivered",
+    "item": "USB-C cable",
+    "total": 9.99,
+    "eligible_refund": 9.99
+  }
+}
